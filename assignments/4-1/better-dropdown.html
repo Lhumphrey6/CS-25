@@ -6,28 +6,6 @@
   <title>Mobile Dropdown Menu</title>
   <link rel="stylesheet" href="styles/base.css">
   <style>
-    span.rotate {
-        transform: rotate(90deg);
-        transition: transform 0.3s ease-in-out; 
-    }
-  </style>
-</head>
-
-<body>
-  <h1>Mobile Dropdown Menu</h1>
-  <nav>
-    <!-- https://www.w3schools.com/charsets/ref_utf_geometric.asp -->
-    <button onclick="toggleMenu()">Menu <span>➤</span></button>
-    <div class="dropdown" id="menu">
-      <!-- your home would be index.html, mine isn't because it is an example -->
-      <a href="styles\index.html">Home</a>
-      <a href="pages/contactus.html">Contact Us</a>
-      <a href="pages/about.html">about</a>
-      <a href="pages/health.html">health</a>
-      <a href="pages/contact.html">Contact</a>
-    </div>
-  </nav>
-  <style>
     /* https://www.w3schools.com/howto/howto_js_dropdown.asp */
     nav {
       position: relative;
@@ -54,20 +32,39 @@
     }
 
     .dropdown a {
-      color: black;
+      color: #6296ce;
       padding: 12px 16px;
       text-decoration: none;
       display: block;
     }
 
     .dropdown a:hover {
-      background-color: #2d9c56;
+      background-color: #d866aaf0;
     }
 
     .show {
       display: block;
     }
+    .fit-picture {
+      width: 100%;
+      height: auto;
+    }
   </style>
+</head>
+<body>
+  <h1>Mobile Dropdown Menu</h1>
+  <nav>
+    <!-- https://www.w3schools.com/charsets/ref_utf_geometric.asp -->
+    <button onclick="toggleMenu()">Menu <span>➤</span></button>
+    <div class="dropdown" id="menu">
+      <!-- your home would be index.html, mine isn't because it is an example -->
+      <a href="styles\index.html">Home</a>
+      <a href="pages/contactus.html">Contact Us</a>
+      <a href="pages/about.html">about</a>
+      <a href="pages/health.html">health</a>
+      <a href="pages/contact.html">Contact</a>
+    </div>
+  </nav>
   <script>
     function toggleMenu() {
       // https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
@@ -76,6 +73,15 @@
       document.getElementsByTagName("span")[0].classList.toggle("rotate");
     }
   </script>
-</body>
+  <img=
+  class="fit-picture"
+  src=.../images/figma.png
+  alt="Figma ss"/>
+  <img=
+  class="fit-picture"
+  src=".../../images/figma.png"
+  alt="figma ss"/>
+  <img=
+body>
 
 </html>

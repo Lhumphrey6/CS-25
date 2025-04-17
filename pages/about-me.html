@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <style>
+      body {
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #de3a7ed2;
+      }
+      nav {
+        background-color: #8153acbe;
+        padding: 0.5rem;
+        text-align: center;
+      }
+      nav a {
+        color: white;
+        margin: 0 1rem;
+        text-decoration: none;
+      }
+      nav a:hover {
+        text-decoration: #800080;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+      }
+      .section {
+        flex: 6 1 calc(33.333% - 2rem);
+        margin: 8rem;
+        background-color: #e575b3;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .section {
+        /* flex-shrink:  */
+        gap: 0.5rem;
+        margin: 0;
+        margin-top: 0;
+      }
+      footer {
+        background-color: #40b8a0;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+    <link rel="stylesheet" href="../styles/base.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- <nav>
+            </nav>
+        </header>
+<!--micheal jackson -->
+      <nav>
+        <!-- https://www.w3schools.com/charsets/ref_utf_geometric.asp -->
+        <button onclick="toggleMenu()">Menu <span>➤</span></button>
+        <div class="dropdown" id="menu">
+          <!-- your home would be index.html, mine isn't because it is an example -->
+          <a href="../index.html">Home</a>
+          <a href="pages/contactus.html">Contact Us</a>
+          <a href="pages/about.html">about</a>
+          <a href="pages/health.html">health</a>
+          <a href="pages/contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>About Me</h1>
+        <p>
+          Hello! My name is Landon, and welcome to my portfolio website. This
+          page is a brief introduction to who I am and what I do. Blah blah blah blah blah blah blah blah blah blah
+        </p>
+      </section>
+      <section>
+        <h2>My work experience</h2>
+        <p>I have worked a wide variety of jobs and have a wide range of skills</p>
+      </section>
+    </main>
+    <footer>
+      <p>Lando's Portfolio</p>
+    </footer>
+  </body>
+</html>

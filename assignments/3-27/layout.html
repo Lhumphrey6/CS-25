@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #2ddc56;
+      }
+      nav {
+        background-color: #444;
+        padding: 0.5rem;
+        text-align: center;
+      }
+      nav a {
+        color: white;
+        margin: 0 1rem;
+        text-decoration: none;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem;
+      }
+      .section {
+        flex: 1 1 calc(33.333% - 2rem);
+        margin: 1rem;
+        background-color: #f4f4f4;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .section {
+        /* flex-shrink:  */
+        gap: 0.5rem;
+        margin: 0;
+        margin-top: 0;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Landon's Portfolio</h1>
+    <nav>
+      <button onclick="toggleMenu()">Menu <span>➤</span></button>
+      <div class="dropdown" id="menu">
+        <a href="styles/index.html">Home</a>
+        <a href="../pages/page2.html">Contact Us</a>
+        <a href="../styles/index.html">about</a>
+        <a href="C:\Users\lando\CS-25\pages\page2.html">health</a>
+        <a href="pages/contact.html">Contact</a>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="section" id="about">
+        <h2>About Me</h2>
+        <p>a brief introduction here.</p>
+      </div>
+      <div class="section" id="projects">
+        <h2>Projects</h2>
+        <p>Showcase projects here.</p>
+      </div>
+      <div class="section" id="contact">
+        <h2>Contact</h2>
+        <p>Provide information here.</p>
+      </div>
+    </div>
+    <footer>
+      <p>2025 Landon Humphrey.</p>
+    </footer>
+  </body>
+</html>
