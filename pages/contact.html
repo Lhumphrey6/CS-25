@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="../styles/base2.css">
+  </head>
+    <nav>
+      <button onclick="toggleMenu()">Menu <span>➤</span></button>
+      <div class="dropdown" id="menu">
+        <a href="../index.html">Home</a>
+        <a href="tunaa.html">Tuna</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="about-me.html">About Me</a>
+      </div>
+    </nav>
+    <script>
+            function toggleMenu() {
+              document.getElementById("menu").classList.toggle("show");
+              document.getElementsByTagName("span")[0].classList.toggle("rotate");
+            }
+    </script>
+      <h2>Contact me or Tuna</h2>
+      <div class="container">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="germany">Germany</option>
+            <option value="france">France</option> 
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="submit">
+        </form>
+      </div>
+      <script>
+        function toggleMenu() {
+          const menu = document.getElementById("menu");
+          menu.style.display = menu.style.display === "block" ? "none" : "block";
+        }
+      </script>
+    <footer>Landon Humphrey 2025.</footer>
+   

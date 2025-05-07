@@ -1,91 +1,72 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me</title>
-    <style>
-      body {
-        font-family: 'Times New Roman', Times, serif, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #de3a7ed2;
-      }
-      nav {
-        background-color: #8153acbe;
-        padding: 0.5rem;
-        text-align: center;
-      }
-      nav a {
-        color: white;
-        margin: 0 1rem;
-        text-decoration: none;
-      }
-      nav a:hover {
-        text-decoration: #800080;
-      }
-      .container {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 1rem;
-      }
-      .section {
-        flex: 6 1 calc(33.333% - 2rem);
-        margin: 8rem;
-        background-color: #e575b3;
-        padding: 1rem;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      }
-      .section {
-        /* flex-shrink:  */
-        gap: 0.5rem;
-        margin: 0;
-        margin-top: 0;
-      }
-      footer {
-        background-color: #40b8a0;
-        color: white;
-        text-align: center;
-        padding: 1rem;
-        margin-top: 1rem;
-      }
-    </style>
-  </head>
+    <title>About me</title>
     <link rel="stylesheet" href="../styles/base.css" />
+    <header>All About Me</header>
+    <body>
+        <nav>
+          <button onclick="toggleMenu()">Menu <span>➤</span></button>
+          <div class="dropdown" id="menu">
+            <a href="../index.html">Home</a>
+            <a href="tunaa.html">Tuna</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="about-me.html">About Me</a>
+            </div>
+        </nav>
+    </body>
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.style.display = menu.style.display === "block" ? "none" : "block";
+      }
+    </script>
   </head>
-
   <body>
-    <header>
-      <!-- <nav>
-            </nav>
-        </header>
-<!--micheal jackson -->
-      <nav>
-        <!-- https://www.w3schools.com/charsets/ref_utf_geometric.asp -->
-        <button onclick="toggleMenu()">Menu <span>➤</span></button>
-        <div class="dropdown" id="menu">
-          <!-- your home would be index.html, mine isn't because it is an example -->
-          <a href="../index.html">Home</a>
-          <a href="pages/contactus.html">Contact Us</a>
-          <a href="pages/about.html">about</a>
-          <a href="pages/health.html">health</a>
-          <a href="pages/contact.html">Contact</a>
-        </div>
-      </nav>
-    </header>
+    </style>
+  <body>
     <main>
+      <h1>Quick Facts!<h1>
+      <div class="flexbox-container">
+        <p>I was born in Huntsville, AL. </p>
+        <p>When I was the Age of 2 my family moved to Dublin, GA.</p>
+        <p>From there we moved to Plymouth, MN</p>
+        <p>After living in MN, we moved to Fresno, CA</p>
+        <p><a href="https://comick.io/comic/03-blue-lock/cHXy1EB1-chapter-210-en">Peak-Fiction</a></p>
+        <p>Most recently my family has moved to Fontana, CA</p>
+      </div>
+    </main>
+    </style>
+  <body>
       <section>
-        <h1>About Me</h1>
+        <h2>A little About Me</h2>
         <p>
           Hello! My name is Landon, and welcome to my portfolio website. This
-          page is a brief introduction to who I am and what I do. Blah blah blah blah blah blah blah blah blah blah
+          page is a brief introduction to who I am and what I do. I am a 21 year old, soon to be college graduate. I love to play video games, watch movies and read manga and comics. I also played college basketball along with writing for both the Prospector and the Independent Record.
+          I am the father to Tuna A. Fisch, who's about seven months old and loves straws. I would consider my two older sisters to be my best friends.
         </p>
       </section>
       <section>
-        <h2>My work experience</h2>
-        <p>I have worked a wide variety of jobs and have a wide range of skills</p>
+        <h3>My work experience</h3>
+        <p>I have worked a wide variety of jobs and have a wide range of skills.
+          Some of my favorite positions have been the following: Marketing Intern at a local Architectural firm, Senior Resident Assistant at John Hopkins Center for Talented Youth, 
+          and a technical operations intern at Sofi Stadium for the National Football League. 
+        </p>
       </section>
-    </main>
+      <body>
+        <h4>My Hobbies</h4>
+        <menu>
+         <li>Reading/Collecting Comic Books and Manga</li>
+         <li>Collecting Action Figures!</li>
+         <li>Spending time with TuneTune</li>
+          <li>Playing Video Games</li>
+          <li>Watching Scary Movies</li>
+          <li>Playing Soccer</li>
+        </menu>
+      </body>
     <footer>
       <p>Lando's Portfolio</p>
     </footer>

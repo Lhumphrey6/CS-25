@@ -1,114 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuna A. Fisch</title>
-    <style>
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding; 0:
-    background-color: #f0f0f0;
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-  }
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  .photo{
-    flex:auto
-    background-color: #f0f0f0ff;
-    border: 1px solidcolor
-  }
-  .photo {
-    flex: auto;
-    background-color: #f0f0f0;
-    border: 1px solid #000;
-  }
-        margin-top: 1rem;
-  }
-  nav {
-      position: relative;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #333;
-      padding: 10px;
-    }
-
-    button {
-      background-color: #333;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-
-    .dropdown {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow:#40b8a0;
-    }
-
-    .dropdown a {
-      color: #6296ce;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-    }
-
-    .dropdown a:hover {
-      background-color: #d866aaf0;
-    }
-
-    .show {
-      display: block;
-    }
-    .fit-picture {
-      width: 100%;
-      height: auto;
-    }
-  </style>
-</head>
-<body>
-  <h1>Mobile Dropdown Menu</h1>
-  <nav>
-    <button onclick="toggleMenu()">Menu <span>➤</span></button>
-    <div class="dropdown" id="menu">
-      <a href="styles/index.html">Home</a>
-      <a href="pages/tunaa.html">Tuna</a>
-      <a href="../styles/index.html">about</a>
-      <a href="./pages/page3.html">health</a>
-      <a href="pages/contact.html">Contact</a>
-      <a href="assets/">Tuna</a>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tuna Alberto Fisch</title>
+    <link rel="stylesheet" href="../styles/base.css">
+  </head>
+  <body>
+    <h1>Tuna A. Fisch</h1>
+    <nav>
+      <button onclick="toggleMenu()">Menu <span>➤</span></button>
+      <div class="dropdown" id="menu">
+        <a href="../index.html">Home</a>
+        <a href="tunaa.html">Tuna</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="about-me.html">About Me</a>
+      </div>
+    </nav>
+    <div class="gallery">
+      <a target="_blank" href="../assets/images/tuneinpot.jpg">
+        <img src="../assets/images/tuneinpot.jpg" alt="Tuna" width="600" height="400">
+      </a>
+      <div class="desc">Tuna in his pot (he broke it)</div>
     </div>
-  </nav>
-  <script>
-    function toggleMenu() {
-      document.getElementById("menu").classList.toggle("show");
-      document.getElementsByTagName("span")[0].classList.toggle("rotate");
-    }
-</style>
-<head>
-<body> 
-  <div class="full-img">
-    <img class="display" src="images/tuna.jpg" alt="Tuna A. Fisch">
-  </style>
-</head>
-<body> 
-  <div class="full-img">
-      <img src="images/tuna1.jpg" alt="Tuna A. Fisch">
-      <img src="images/tuna2.jpg" alt="Tuna A. Fisch">
-      <img src="images/tuna3.jpg" alt="Tuna A. Fisch">
+    
+    <div class="gallery">
+      <a target="_blank" href="../assets/images/TiniTune.jpg">
+        <img src="../assets/images/TiniTune.jpg" alt="Tuney" width="600" height="400">
+      </a>
+      <div class="desc">Tunas blurry</div>
     </div>
-    <div class="thumb-bar">
-    <script src="base.js"></script>
-</body>
-<footer>© 2025 Landon Humphrey</footer>
+    
+    <div class="gallery">
+      <a target="_blank" href="../assets/images/tunecase.jpg">
+        <img src="../assets/images/tunecase.jpg" alt="Silly Tuna" width="600" height="400">
+      </a>
+      <div class="desc">Tuna Peaking</div>
+    </div>
+    <script>
+      function toggleMenu() {
+        document.getElementById("menu").classList.toggle("show");
+        document.getElementsByTagName("span")[0].classList.toggle("rotate");
+      }
+    </script>
+  </body>
 </html>
+<body>
+  
+<footer>2025 Landon Humphrey</footer>
+  </body>
+
+
+
+
+
+<!-- The target attribute specifies where to open the linked document.
+   The _blank value opens the document in a new window or tab. --

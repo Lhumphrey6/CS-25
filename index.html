@@ -1,85 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #bf4d99;
+    <link rel="stylesheet" href="styles/base.css" />
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.style.display = menu.style.display === "block" ? "none" : "block";
       }
-      nav {
-        background-color: #444;
-        padding: 0.5rem;
-        text-align: center;
-      }
-      nav a {
-        color: white;
-        margin: 0 1rem;
-        text-decoration: none;
-      }
-      nav a:hover {
-        text-decoration: color #bf4d99
-      }
-      .container {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 1rem;
-      }
-      .section {
-        flex: 1 1 calc(33.333% - 2rem);
-        margin: 1rem;
-        background-color: #f4f4f4;
-        padding: 1rem;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        /* <rgb()> values and legacy <rgba()> values*/
-      }
-      .section {
-        /* flex-shrink:  */
-        gap: 0.5rem;
-        margin: 0;
-        margin-top: 0;
-      }
-      footer {
-        background-color: #40b8a0;
-        color: white;
-        text-align: center;
-        padding: 1rem;
-        margin-top: 1rem;
-      }
-    </style>
+    
+    </script>
   </head>
   <body>
-    <h1>Landon's Portfolio</h1>
+    <h1>Home Page</h1>
     <nav>
       <button onclick="toggleMenu()">Menu <span>➤</span></button>
       <div class="dropdown" id="menu">
         <a href="index.html">Home</a>
         <a href="pages/tunaa.html">Tuna</a>
-        <a href="../styles/index.html">about</a>
-        <a href="./pages/page3.html">health</a>
+        <a href="pages/about-me.html">About</a>
+        <a href="pages/privacy.html">Privacy</a>
         <a href="pages/contact.html">Contact</a>
       </div>
     </nav>
-    <div class="container">
+    <div class="flex-container">
       <div class="section" id="about">
-        <h2>About Me</h2>
-        <p>a brief introduction here.</p>
+        <h2>Professional History</h2>
+        <p>To view my resume <a href="file:///C:/Users/lando/AppData/Local/Temp/b9c00074-3aa0-4825-b7bf-900973c18dc8_ResumeLandonHumphrey.zip.dc8/ResumeLandonHumphrey.html">Click Here</a></p>
       </div>
-      <div class="section" id="projects">
-        <h2>Projects</h2>
-        <p>Showcase projects here.</p>
+      <div class="section" id="Tuna">
+        <h2><a href="./pages/tunaa.html">Tuna</a></h2>
+        <p>Click here for joy.</p>
       </div>
       <div class="section" id="contact">
         <h2>Contact</h2>
-        <p>Provide information here.</p>
+        <p>To contact Landon please follow this <a href="./pages/contact.html">link</a></p>
       </div>
+      <div class="section" id="privacy">
+        <h2>Privacy Policy</h2>
+        <p>We do not share your information with third parties.</p>
+          <p>We value your privacy</p>
+          <p>Click here for our <a href="./pages/privacy.html">Privacy policy</a></p>
+        </div>
+    <main>
+        <div class="gallery">
+          <a target="_blank" href="./assets/images/lanhum.jpg">
+            <img src="./assets/images/lanhum.jpg" alt="Proheadshot" width="600" height="400">
+          </a>
+          <div class="desc">Landon Headshot</div>
+        </div>
+      </main>
     </div>
-    <footer>
-      2025 Landon Humphrey.
-    </footer>
+    <meta name="handheldfriendly" content="true">
+    <meta name="mobileoptimized" content="240">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <footer>2025 Landon Humphrey.</footer>
   </body>
 </html>

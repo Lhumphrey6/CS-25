@@ -1,11 +1,177 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #00ff0d;
-  }
-  h1 {
-    color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #ed78cdd0;
+  justify-content: center;
+}
+
+header {
+  background-color: #bf4d99;
+  color: #fff;
+  text-align: center;
+  padding: auto;
+  text-size-adjust: 100%;
+  font-size: 1.9rem;
+  font-weight: bold;
+  text-wrap: wrap;
+  text-emphasis: center;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+.photo {
+  flex: auto;
+  background-color: #f0f0f0ff;
+  border: 1px solid #007bff;
+  padding: 70px;
+}
+
+.full-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.full-img img {
+  max-width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+  img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    display: inline-block;
     text-align: center;
-  }
+}
+
+.dropdown {
+  display: none;
+}
+
+.dropdown a {
+  display: block;
+  padding: 0.5rem 1rem;
+  background-color: #444;
+}
+
+.dropdown a:hover {
+  background-color: #822aabdf;
+}
+
+nav {
+  background-color: #444;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+nav a {
+  color: #bf4d99;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: color #aeac35;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: warp;
+  justify-content: center;
+}
+
+.section {
+  flex-grow: calc(100% - 2rem);
+  margin: 1rem;
+  background-color: #eee9ec56;
+  padding: 1rem;
+}
+
+button {
+  background-color: #737573;
+  color: #e9f2f2;
+  border: none;
+  cursor: pointer;
+
+}
+.show {
+  display: block;
+}
+.fit-picture {
+  width: 100%;
+  height: auto;
+}
+
+main {
+  display: inline-flex;
+  flex-direction: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-wrap: wrap;
+  padding: 1rem;
+}
+
+div.gallery {
+  margin: 5px;
+  border:#40b8a0;
+  float: middle;
+  width: 175px;
+}
+
+div.gallery:hover { 
+  border: 1px #6a5acd
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+footer {
+  background-color: #40b8a0;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px #a94d7e9a;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+

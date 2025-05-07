@@ -1,13 +1,40 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link href="styles/styles.css" rel="stylesheet" />
-  </head>
-  <body>
-    <h1>My Portfolio</h1>
-    <p>Welcome to my portfolio. I am a web developer.</p>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Dropdown Menu</title>
+  <link rel="stylesheet" href="styles/base.css">
+</head>
+
+<body>
+  <nav>
+    <!-- https://www.w3schools.com/charsets/ref_utf_geometric.asp -->
+    <button onclick="toggleMenu()">Menu <span>➤</span></button>
+    <div class="dropdown" id="menu">
+      <a href="styles/index.html">Home</a>
+      <a href="pages/tunaa.html">Tuna</a>
+      <a href="pages/contact.html">about</a>
+      <a href="pages/privacy.html">health</a>
+      <a href="pages/contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <h1>Mobile Dropdown Menu</h1>
+  <!-- 
+    Scripts are often in the <head> </head> or just before the closing body tag.
+    Putting at the bottom helps ensure that the script runs after the DOM (think "page") is loaded. 
+  -->
+
+  <script>
+    function toggleMenu() {
+      // https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
+      // https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/toggle
+      document.getElementById("menu").classList.toggle("show");
+      document.getElementsByTagName("span")[0].classList.toggle("rotate");
+    }
+  </script>
+</body>
+
 </html>
