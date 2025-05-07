@@ -1,26 +1,21 @@
-<doctype html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Tuna A. Fisch</title>
-    </head>
-    <body>
-      <h1>Welcome to Tuna's Page</h1>
-      <p>This is my page all about tuna.</p>
-    </body>
-<style>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuna A. Fisch</title>
+    <style>
   body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding; 0:
     background-color: #f0f0f0;
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
   }
-  .container {
-    max-width: 920px;
-    margin:0 auto;
-  }
-  .gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -30,11 +25,11 @@
     background-color: #f0f0f0ff;
     border: 1px solidcolor
   }
-    footer {
-        background-color: #40b8a0;
-        color: white;
-        text-align: center;
-        padding: 1rem;
+  .photo {
+    flex: auto;
+    background-color: #f0f0f0;
+    border: 1px solid #000;
+  }
         margin-top: 1rem;
   }
   nav {
@@ -104,15 +99,16 @@
 <body> 
   <div class="full-img">
     <img class="display" src="images/tuna.jpg" alt="Tuna A. Fisch">
-    <div class="overlay"></div>
-    <button class="darken">Darken</button>
-    </div> ==$0
-    <div class="thumb-bar">
+  </style>
+</head>
+<body> 
+  <div class="full-img">
       <img src="images/tuna1.jpg" alt="Tuna A. Fisch">
       <img src="images/tuna2.jpg" alt="Tuna A. Fisch">
       <img src="images/tuna3.jpg" alt="Tuna A. Fisch">
     </div>
-    <footer>.2025 Landon Humphrey</footer>
+    <div class="thumb-bar">
     <script src="base.js"></script>
 </body>
+<footer>© 2025 Landon Humphrey</footer>
 </html>
